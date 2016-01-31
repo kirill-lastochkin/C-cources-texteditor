@@ -324,8 +324,8 @@ void EditFile(struct File *fp)
                 if(fs==KEY_BACKSPACE)
                 {
                     ArrowHandler(0,-1);
-                    wprintw(editor," ");
-                    ArrowHandler(0,-1);
+                    wdelch(editor);
+                    //ArrowHandler(0,-1);
                 }
             }
             else
